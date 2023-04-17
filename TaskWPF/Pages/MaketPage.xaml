@@ -1,0 +1,203 @@
+﻿<Page x:Class="TaskWPF.Pages.MaketPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TaskWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MaketPage"
+      Background="#4a4a48">
+
+
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0 10 0 0">
+            <Button Content="File" Width="50"/>
+            <Button Content="Notification" Width="90" />
+            <Button Content="Status" Width="90" />
+            <Button Content="View" Width="90" />
+            <Button Content="Costomer" Width="95" Background="White" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" Background="Black">
+            <StackPanel Orientation="Horizontal" Margin="10 15 10 0 " >
+                <TextBlock Text="Cusromer Search" Foreground="Gray" FontSize="30"/>
+                <TextBlock Text="Edit Custsomer" Foreground="White" FontSize="30" Margin="10 0 0 0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"  Background="#4a4a48" Height="40" Margin="10">
+                <TextBlock Text="x" Width="520" Foreground="#4a4a48"/>
+                <Button Content="Save Data" Margin="4" Width="90" Foreground="White" Background="#6e6c69" BorderBrush="White" BorderThickness="2" HorizontalContentAlignment="Left" Padding="4">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Content="Close" Margin="4" Width="60" BorderBrush="White" Foreground="White" Background="#6e6c69" BorderThickness="2" HorizontalContentAlignment="Left" Padding="4">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                        
+                    </Button.Resources>
+
+            
+                </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Background="#4a4a48" Margin="10">
+
+                <StackPanel Orientation="Vertical" Margin="10"> 
+                    
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="3">
+                        <TextBlock Text="First Name" FontSize="17" Foreground="White" Width="200"/>
+
+                        <TextBox Text="" Background="#363533" Height="30" Width="150" >
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="White" Offset="0" />
+                                    <GradientStop Color="White" Offset="1" />
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
+
+                            <TextBox.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </TextBox.Resources>
+                        </TextBox>
+
+
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="3">
+                     
+                        <TextBlock Text="Last Name" FontSize="17" Foreground="White" Width="200"/>
+                        <TextBox Text="" Background="#363533" Width="150" Height="30">
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="White" Offset="0" />
+                                    <GradientStop Color="White" Offset="1" />
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
+
+                            <TextBox.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </TextBox.Resources>
+                        </TextBox>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="3">
+                      
+                        <TextBlock Text="Company Name" FontSize="17" Foreground="White" Width="200"/>
+                        <TextBox Text="" Background="#363533" Width="150" Height="30">
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="White" Offset="0" />
+                                    <GradientStop Color="White" Offset="1" />
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
+
+                            <TextBox.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </TextBox.Resources>
+                        </TextBox>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="3">
+                     
+                        <TextBlock Text="Devision" FontSize="17" Foreground="White" Width="200"/>
+                        <TextBox Text="" Background="#363533" Width="150" Height="30">
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="White" Offset="0" />
+                                    <GradientStop Color="White" Offset="1" />
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
+
+                            <TextBox.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </TextBox.Resources>
+                        </TextBox>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Width="200" Height="30" Margin="3" HorizontalAlignment="Left">
+                       
+                        <TextBlock Text="Phone Number" FontSize="17" Foreground="Black" FontWeight="Bold" Width="200"/>
+                    </StackPanel>
+
+
+                    <StackPanel Orientation="Horizontal" Margin="3">
+                       
+                        <TextBlock Text="Phone" FontSize="17" Foreground="White" Width="200"/>
+                        <TextBox Text="" Background="#363533" Width="150" Height="30">
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="White" Offset="0" />
+                                    <GradientStop Color="White" Offset="1" />
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
+
+                            <TextBox.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </TextBox.Resources>
+                        </TextBox>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="3">
+                     
+                        <TextBlock Text="Fax" FontSize="17" Foreground="White" Width="200"/>
+                        <TextBox Text="" Background="#363533" Width="150" Height="30">
+                            <TextBox.BorderBrush>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="White" Offset="0" />
+                                    <GradientStop Color="White" Offset="1" />
+                                </LinearGradientBrush>
+                            </TextBox.BorderBrush>
+
+                            <TextBox.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </TextBox.Resources>
+                        </TextBox>
+                    </StackPanel>
+
+                </StackPanel>
+
+                <StackPanel Margin="10">
+                    <TextBlock Text="Birthday" FontSize="17" Foreground="White"/>
+                </StackPanel>
+
+                <StackPanel Margin="10">
+                    <Calendar/>
+                </StackPanel>
+            </StackPanel>
+                
+                
+            
+        </StackPanel>
+    </Grid>
+</Page>
